@@ -1,0 +1,14 @@
+<!-- barre de nav qui s'affiche quand l'utilisateur est connecter-->
+
+<nav class="navbar navbar-default" *ngIf="currentUser">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="active">
+        <a routerLink="users"> Utilisateurs </a>
+      </li>
+      <li>
+        <a (click)="logout()" style="cursor:pointer"> Se déconnecter </a>
+      </li>
+    </ul>
+  </div>
+</nav>
